@@ -2,8 +2,6 @@
 
 public class ClassesContainer
 {
-    private int i = 0;
-    
     private List<ElectronicDevice> electronicDevices = new List<ElectronicDevice>();
 
     public void AddElectronicDevice(ElectronicDevice electronicDevice)
