@@ -7,7 +7,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3656a29b-e910-4d6b-8786-d6c04612feff" name="Changes" comment="" />
+    <list default="true" id="3656a29b-e910-4d6b-8786-d6c04612feff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab1/MacBook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/CallDevice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/CallDevice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/ClassHierarchyForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/ClassHierarchyForm.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/ClassesContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/ClassesContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/ComputerDevice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/ComputerDevice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/LaptopDevice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/LaptopDevice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/MainForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/MainForm.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/MainForm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/SmartDevice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/SmartDevice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/SmartWatchDevice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/SmartWatchDevice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/TVDevice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/TVDevice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/bin/Debug/net8.0-windows/Lab1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/bin/Debug/net8.0-windows/Lab1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/bin/Debug/net8.0-windows/Lab1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/bin/Debug/net8.0-windows/Lab1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/bin/Debug/net8.0-windows/Lab1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/bin/Debug/net8.0-windows/Lab1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/ref/Lab1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/ref/Lab1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/refint/Lab1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/refint/Lab1.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,10 +41,29 @@
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Rudzeniapol&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Rudzeniapol/LabsOOP.git&quot;,
+    &quot;accountId&quot;: &quot;b01b6dcd-e41f-41c9-82e4-ac22058ea64c&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Lab1/ClassesContainer.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -32,6 +76,8 @@
   &quot;keyToString&quot;: {
     &quot;.NET Project.Lab1.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -74,14 +120,33 @@
       <workItem from="1740066592339" duration="2065000" />
       <workItem from="1740130566496" duration="524000" />
       <workItem from="1740152145415" duration="634000" />
+      <workItem from="1740321792110" duration="6508000" />
+      <workItem from="1740395663648" duration="890000" />
+      <workItem from="1741201746756" duration="439000" />
+      <workItem from="1741265473966" duration="2163000" />
+      <workItem from="1741852024359" duration="259000" />
+      <workItem from="1741858237601" duration="1882000" />
+      <workItem from="1741860293612" duration="8428000" />
     </task>
+    <task id="LOCAL-00001" summary="refactor commit">
+      <option name="closed" value="true" />
+      <created>1740333746449</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740333746449</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="refactor commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor commit" />
   </component>
 </project>

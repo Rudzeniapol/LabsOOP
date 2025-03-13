@@ -81,7 +81,7 @@ namespace Lab1
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBox2.Items.Clear();
-
+            
             string selectedClass = comboBox1.SelectedItem.ToString();
             Type? type = Type.GetType($"Lab1.{selectedClass}");
 
@@ -92,7 +92,7 @@ namespace Lab1
                                  .Select(m => m.Name)
                                  .Distinct()
                                  .ToArray();
-
+                
                 comboBox2.Items.AddRange(methods);
                 comboBox2.SelectedIndex = 0;
             }
@@ -229,6 +229,41 @@ namespace Lab1
             ElectronicDevice selectedDevice = listBox1.SelectedItem as ElectronicDevice;
             container.RemoveElectronicDevice(selectedDevice);
             listBox1.Items.Remove(selectedDevice);
+        }
+
+        private void FieldButton_Click(object sender, EventArgs e)
+        {
+            if (FieldsComboBox.SelectedItem == null)
+            {
+                MessageBox.Show("Вы не выбрали свойство для изменения");
+                return;
+            }
+            if (listBox1.SelectedItem == null)
+            {
+                MessageBox.Show("Вы не выбрали объект для изменения");
+            }
+            int index = listBox1.Items.IndexOf(listBox1.SelectedItem);
+            string newValue = FieldTextBox.Text;
+            string valueName = FieldsComboBox.Text;
+            container.ChangeParameters(index, valueName, newValue);
+            ErrorFieldLabel.Text = $"{FieldsComboBox.Text}: {container.GetDevices()[index].GetType().GetProperty(FieldsComboBox.Text).GetValue(container.GetDevices()[index])}";
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            FieldsComboBox.Items.Clear();
+            int index = listBox1.Items.IndexOf(listBox1.SelectedItem);
+            Type type = container.GetDevices()[index].GetType();
+            var properties = type.GetProperties();
+            var propertiesNames = properties.Select(p => p.Name).ToArray();
+            FieldsComboBox.Items.AddRange(propertiesNames);
+            
+        }
+
+        private void FieldsComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = listBox1.Items.IndexOf(listBox1.SelectedItem);
+            ErrorFieldLabel.Text = $"{FieldsComboBox.Text}: {container.GetDevices()[index].GetType().GetProperty(FieldsComboBox.Text).GetValue(container.GetDevices()[index])}";
         }
     }
 }

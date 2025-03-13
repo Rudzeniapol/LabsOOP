@@ -4,6 +4,25 @@ public class SmartDevice : CallDevice, IConnectable, IDevice
 {
     protected bool IsConnected { get; set; }
 
+    public bool isConnected
+    {
+        get
+        {
+            return IsConnected;
+        }
+        set
+        {
+            try
+            {
+                IsConnected = value;
+            }
+            catch
+            {
+                throw new InvalidCastException("Значение должно быть либо true, либо false");
+            }
+        }
+    }
+    
     public SmartDevice()
     {
         IsConnected = false;

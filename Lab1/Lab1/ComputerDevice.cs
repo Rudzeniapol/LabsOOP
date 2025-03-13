@@ -3,6 +3,25 @@
 public class ComputerDevice : StaticDevice, IPowerable, IDevice
 {
     protected bool _power = false;
+
+    public bool Power
+    {
+        get
+        {
+            return _power;
+        }
+        set
+        {
+            try
+            {
+                _power = Convert.ToBoolean(value);
+            }
+            catch
+            {
+                throw new InvalidCastException("Значение должно быть либо true, либо false");
+            }
+        }
+    }
     public void PowerOn()
     {
         if (!_power)

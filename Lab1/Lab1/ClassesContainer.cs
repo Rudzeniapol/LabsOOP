@@ -31,4 +31,24 @@ public class ClassesContainer
             MessageBox.Show("Метод не найден.");
         }
     }
+
+    public void ChangeParameters(int index, string valueName, string newValue)
+    {
+        var property = electronicDevices[index].GetType().GetProperty(valueName);
+        if (valueName != null)
+        {
+            try
+            {
+                property.SetValue(electronicDevices[index], Convert.ChangeType(newValue.ToLower(), property.PropertyType));
+            }
+            catch
+            {
+                MessageBox.Show("Некорректное значение");
+            }
+        }
+        else
+        {
+            MessageBox.Show("Свойство не найдено");
+        }
+    }
 }

@@ -5,8 +5,20 @@ namespace Lab1;
 
 public class CallDevice : PortableDevice, IDevice
 {
-    private const string Pattern = @"^\+375(29|33|44|25)\d{7}$";
-    private readonly Regex _regex = new Regex(Pattern);
+    private const string _Pattern = @"^\+375(29|33|44|25)\d{7}$";
+    private readonly Regex _regex = new Regex(_Pattern);
+
+    public string Pattern {
+        get
+        {
+            return _Pattern;
+        }
+        set
+        {
+            throw new InvalidCastException("Значение является константным");
+        }
+    }
+
     public virtual void Call(string? phone)
     {
         if (phone == null || phone.Trim().Equals("") || !_regex.IsMatch(phone))

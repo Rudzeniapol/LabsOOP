@@ -4,6 +4,25 @@ public class SmartWatchDevice : CallDevice, IDevice
 {
     private bool _isConnectedToPhone;
 
+    public bool IsConnectedToPhone
+    {
+        get
+        {
+            return _isConnectedToPhone;
+        }
+        set
+        {
+            try
+            {
+                _isConnectedToPhone = value;
+            }
+            catch
+            {
+                throw new InvalidCastException("Значение должно быть либо true, либо false");
+            }
+        }
+    }
+    
     public SmartWatchDevice()
     {
         _isConnectedToPhone = false;

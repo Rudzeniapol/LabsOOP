@@ -35,3 +35,6 @@ C:\Users\ffgg9\Desktop\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-wind
 C:\Users\ffgg9\Desktop\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\ZedGraph.dll
 C:\Users\ffgg9\Desktop\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\ffgg9\Desktop\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\ffgg9\Desktop\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.sourcelink.json
+C:\Users\ffgg9\Desktop\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.ClassHierarchyForm.resources
+C:\Users\ffgg9\Desktop\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.csproj.GenerateResource.cache
