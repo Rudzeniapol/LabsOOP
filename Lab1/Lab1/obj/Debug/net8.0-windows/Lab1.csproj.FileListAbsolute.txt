@@ -38,3 +38,43 @@ C:\Users\ffgg9\Desktop\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-wind
 C:\Users\ffgg9\Desktop\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.sourcelink.json
 C:\Users\ffgg9\Desktop\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.ClassHierarchyForm.resources
 C:\Users\ffgg9\Desktop\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.csproj.GenerateResource.cache
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\Lab1.exe
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\Lab1.deps.json
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\Lab1.runtimeconfig.json
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\Lab1.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\Lab1.pdb
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\AForge.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\AForge.Video.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\AForge.Video.DirectShow.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\Emgu.CV.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\Emgu.CV.Bitmap.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\Emgu.CV.Models.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\Emgu.TF.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\EmguFFmpeg.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\EmguFFmpeg.Bitmap.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\FFmpeg.AutoGen.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\OpenTK.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\OpenTK.GLControl.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\System.Drawing.Common.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\System.Private.Windows.Core.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\ZedGraph.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.csproj.AssemblyReference.cache
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.ClassHierarchyForm.resources
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.csproj.GenerateResource.cache
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.AssemblyInfoInputs.cache
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.AssemblyInfo.cs
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.csproj.CoreCompileInputs.cache
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.sourcelink.json
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.csproj.Up2Date
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\refint\Lab1.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.pdb
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.genruntimeconfig.cache
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\ref\Lab1.dll

@@ -50,7 +50,7 @@ namespace Lab1
                 return;
             }
             
-            videoSource = new VideoCaptureDevice(videoDevices[1].MonikerString);
+            videoSource = new VideoCaptureDevice(videoDevices[0].MonikerString);
             
             if (videoSource.VideoCapabilities.Length == 0)
             {
@@ -246,14 +246,14 @@ namespace Lab1
             string newValue = FieldTextBox.Text;
             string valueName = FieldsComboBox.Text;
             container.ChangeParameters(index, valueName, newValue);
-            ErrorFieldLabel.Text = $"{FieldsComboBox.Text}: {container.GetDevices()[index].GetType().GetProperty(FieldsComboBox.Text).GetValue(container.GetDevices()[index])}";
+            ErrorFieldLabel.Text = $"{FieldsComboBox.Text}: {container[index].GetType().GetProperty(FieldsComboBox.Text).GetValue(container[index])}";
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             FieldsComboBox.Items.Clear();
             int index = listBox1.Items.IndexOf(listBox1.SelectedItem);
-            Type type = container.GetDevices()[index].GetType();
+            Type type = container[index].GetType();
             var properties = type.GetProperties();
             var propertiesNames = properties.Select(p => p.Name).ToArray();
             FieldsComboBox.Items.AddRange(propertiesNames);
@@ -263,7 +263,7 @@ namespace Lab1
         private void FieldsComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             int index = listBox1.Items.IndexOf(listBox1.SelectedItem);
-            ErrorFieldLabel.Text = $"{FieldsComboBox.Text}: {container.GetDevices()[index].GetType().GetProperty(FieldsComboBox.Text).GetValue(container.GetDevices()[index])}";
+            ErrorFieldLabel.Text = $"{FieldsComboBox.Text}: {container[index].GetType().GetProperty(FieldsComboBox.Text).GetValue(container[index])}";
         }
     }
 }

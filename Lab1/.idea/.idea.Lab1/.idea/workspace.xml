@@ -8,30 +8,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3656a29b-e910-4d6b-8786-d6c04612feff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab1/MacBook.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/CallDevice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/CallDevice.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/ClassHierarchyForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/ClassHierarchyForm.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/ClassesContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/ClassesContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/ComputerDevice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/ComputerDevice.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/LaptopDevice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/LaptopDevice.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/MainForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/MainForm.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/MainForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/SmartDevice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/SmartDevice.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/SmartWatchDevice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/SmartWatchDevice.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/TVDevice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/TVDevice.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/bin/Debug/net8.0-windows/Lab1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/bin/Debug/net8.0-windows/Lab1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/bin/Debug/net8.0-windows/Lab1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/bin/Debug/net8.0-windows/Lab1.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/bin/Debug/net8.0-windows/Lab1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/bin/Debug/net8.0-windows/Lab1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/bin/Debug/net8.0-windows/Lab1.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/bin/Debug/net8.0-windows/Lab1.runtimeconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/Lab1.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/ref/Lab1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/ref/Lab1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/refint/Lab1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Debug/net8.0-windows/refint/Lab1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/Lab1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/Lab1.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +52,12 @@
     &quot;assignee&quot;: &quot;Rudzeniapol&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Rudzeniapol/LabsOOP.git&quot;,
-    &quot;accountId&quot;: &quot;b01b6dcd-e41f-41c9-82e4-ac22058ea64c&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Rudzeniapol/LabsOOP.git",
+    "accountId": "f06e3867-a89a-4efa-8ade-1d12594ed3f0"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Lab1/ClassesContainer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -72,20 +74,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.Lab1.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.Lab1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Lab1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -126,7 +129,10 @@
       <workItem from="1741265473966" duration="2163000" />
       <workItem from="1741852024359" duration="259000" />
       <workItem from="1741858237601" duration="1882000" />
-      <workItem from="1741860293612" duration="8428000" />
+      <workItem from="1741860293612" duration="8646000" />
+      <workItem from="1741873154893" duration="4716000" />
+      <workItem from="1742482666862" duration="750000" />
+      <workItem from="1744194976301" duration="127000" />
     </task>
     <task id="LOCAL-00001" summary="refactor commit">
       <option name="closed" value="true" />
@@ -136,7 +142,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740333746449</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add 2 lab">
+      <option name="closed" value="true" />
+      <created>1741872061460</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741872061460</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add 2 lab docx">
+      <option name="closed" value="true" />
+      <created>1741872164921</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741872164921</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +169,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="refactor commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor commit" />
+    <MESSAGE value="add 2 lab" />
+    <MESSAGE value="add 2 lab docx" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 2 lab docx" />
   </component>
 </project>

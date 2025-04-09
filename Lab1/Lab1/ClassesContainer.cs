@@ -32,6 +32,12 @@ public class ClassesContainer
         }
     }
 
+    public ElectronicDevice this[int index]
+    {
+        get => electronicDevices[index];
+        set => electronicDevices[index] = value;
+    }
+    
     public void ChangeParameters(int index, string valueName, string newValue)
     {
         var property = electronicDevices[index].GetType().GetProperty(valueName);

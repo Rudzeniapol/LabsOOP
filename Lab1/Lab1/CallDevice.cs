@@ -7,7 +7,7 @@ public class CallDevice : PortableDevice, IDevice
 {
     private const string _Pattern = @"^\+375(29|33|44|25)\d{7}$";
     private readonly Regex _regex = new Regex(_Pattern);
-
+    
     public string Pattern {
         get
         {

@@ -4,6 +4,8 @@ public class SmartWatchDevice : CallDevice, IDevice
 {
     private bool _isConnectedToPhone;
 
+    
+    
     public bool IsConnectedToPhone
     {
         get
