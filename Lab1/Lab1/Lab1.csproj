@@ -6,6 +6,7 @@
         <Nullable>enable</Nullable>
         <UseWindowsForms>true</UseWindowsForms>
         <ImplicitUsings>enable</ImplicitUsings>
+        <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
     </PropertyGroup>
 
     <ItemGroup>
@@ -26,6 +27,10 @@
       <Compile Update="ParameterInputForm.cs">
         <SubType>Form</SubType>
       </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Common\Common.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,9 +1,11 @@
-﻿namespace Lab1;
+﻿using Common;
 
-public class PortableDevice : ElectronicDevice, IDevice
+namespace Lab1;
+[Serializable]
+public class PortableDevice : ElectronicDevice
 {
     public override void Property()
     {
-        MainForm.Instance.Output("Устройство является переносимым.");
+        Console.WriteLine("Устройство является переносимым.");
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Lab1;
-
-public class TvDevice : StaticDevice, IPowerable, IDevice
+[Serializable]
+public class TvDevice : StaticDevice, IPowerable
 {
     protected bool _power = false;
 
@@ -57,6 +57,6 @@ public class TvDevice : StaticDevice, IPowerable, IDevice
     
     public override void Property()
     {
-        MainForm.Instance.Output("Это телевизор. Стационарное устройство с экраном для приёма телевизионных передач.");
+        Console.WriteLine("Это телевизор. Стационарное устройство с экраном для приёма телевизионных передач.");
     }
 }

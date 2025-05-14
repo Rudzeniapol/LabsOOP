@@ -1,9 +1,11 @@
-﻿namespace Lab1;
+﻿using Common;
 
-public class StaticDevice : ElectronicDevice, IDevice
+namespace Lab1;
+[Serializable]
+public class StaticDevice : ElectronicDevice
 {
     public override void Property()
     {
-        MainForm.Instance.Output("Статическое устройство, установленное в определенном месте.");
+        Console.WriteLine("Статическое устройство, установленное в определенном месте.");
     }
 }

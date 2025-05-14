@@ -1,9 +1,9 @@
 ﻿namespace Lab1;
-
-public class TabletDevice : SmartDevice, IDevice
+[Serializable]
+public class TabletDevice : SmartDevice
 {
     public override void Property()
     {
-        MainForm.Instance.Output("Это планшет: умное устройство (имеет возможность взаимодействовать с Интернетом).");
+        Console.WriteLine("Это планшет: умное устройство (имеет возможность взаимодействовать с Интернетом).");
     }
 }

@@ -78,3 +78,5 @@ C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1
 C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.pdb
 C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\Lab1.genruntimeconfig.cache
 C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\obj\Debug\net8.0-windows\ref\Lab1.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\Common.dll
+C:\Users\ffgg9\OneDrive\Desktop\Infinite Learning\Students package\OOP\Labs\Lab1\Lab1\bin\Debug\net8.0-windows\Common.pdb

@@ -1,6 +1,6 @@
 ﻿namespace Lab1;
-
-public class ComputerDevice : StaticDevice, IPowerable, IDevice
+[Serializable]
+public class ComputerDevice : StaticDevice, IPowerable
 {
     protected bool _power = false;
 
@@ -50,7 +50,7 @@ public class ComputerDevice : StaticDevice, IPowerable, IDevice
     
     public override void Property()
     {
-        MainForm.Instance.Output("Это компьютер. Стационарная мощная вычислительная машина.");
+        Console.WriteLine("Это компьютер. Стационарная мощная вычислительная машина.");
     }
 
     public void UpgradeRam()

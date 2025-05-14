@@ -1,6 +1,10 @@
-﻿namespace Lab1;
+﻿using System.Collections;
+using Common;
 
-public class ClassesContainer
+namespace Lab1;
+
+[Serializable]
+public class ClassesContainer : IEnumerable
 {
     private List<ElectronicDevice> electronicDevices = new List<ElectronicDevice>();
 
@@ -9,11 +13,21 @@ public class ClassesContainer
         electronicDevices.Add(electronicDevice);
     }
 
+    public void ClearDevices()
+    {
+        electronicDevices.Clear();
+    }
+    
     public void RemoveElectronicDevice(ElectronicDevice electronicDevice)
     {
         electronicDevices.Remove(electronicDevice);
     }
 
+    public IEnumerator GetEnumerator()
+    {
+        return electronicDevices.GetEnumerator();
+    }
+    
     public List<ElectronicDevice> GetDevices()
     {
         return electronicDevices;

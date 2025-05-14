@@ -8,7 +8,8 @@ using Emgu.CV.Structure;
 
 namespace Lab1
 {
-    public partial class SmartphoneDevice : SmartDevice
+    [Serializable]
+    public class SmartphoneDevice : SmartDevice
     {
         
         public virtual void TakePhoto(Bitmap image)
@@ -30,7 +31,7 @@ namespace Lab1
 
         public override void Property()
         {
-            MainForm.Instance.Output("Это смартфон. Портативное устройство с множеством возможностей.");
+            Console.WriteLine("Это смартфон. Портативное устройство с множеством возможностей.");
         }
     }
 }

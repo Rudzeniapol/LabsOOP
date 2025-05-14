@@ -2,10 +2,13 @@ using System;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using Common;
 using Emgu.CV;
 using Emgu.CV.CvEnum;
 
@@ -21,7 +24,9 @@ namespace Lab1
         private FilterInfoCollection videoDevices;  
         private VideoCaptureDevice videoSource;    
         private Bitmap currentFrame;               
-
+        private const string PluginVersion = "2";
+        private Assembly assembly = Assembly.LoadFrom($"C:\\Users\\ffgg9\\OneDrive\\Desktop\\Infinite Learning\\Students package\\OOP\\Labs\\Lab1\\Plugin_v{PluginVersion}\\bin\\Debug\\net8.0\\Plugin_v{PluginVersion}.dll");
+        private Type macType;
         public MainForm()
         {
             _instance = this;
@@ -31,8 +36,14 @@ namespace Lab1
                                      .Where(t => t.IsClass && typeof(ElectronicDevice).IsAssignableFrom(t) && t != typeof(ElectronicDevice))
                                      .Select(t => t.Name)
                                      .ToArray();
-
             comboBox1.Items.AddRange(deviceTypes);
+
+            macType = assembly.GetType($"Plugin_v{PluginVersion}.MacBook");
+            if (macType != null)
+            {
+                comboBox1.Items.Add(macType.Name);
+            }
+
             comboBox1.SelectedIndexChanged += ComboBox1_SelectedIndexChanged;
 
             button1.Click += Button1_Click;
@@ -50,7 +61,7 @@ namespace Lab1
                 return;
             }
             
-            videoSource = new VideoCaptureDevice(videoDevices[0].MonikerString);
+            videoSource = new VideoCaptureDevice(videoDevices[1].MonikerString);
             
             if (videoSource.VideoCapabilities.Length == 0)
             {
@@ -85,6 +96,11 @@ namespace Lab1
             string selectedClass = comboBox1.SelectedItem.ToString();
             Type? type = Type.GetType($"Lab1.{selectedClass}");
 
+            if (type == null)
+            {
+                type = assembly.GetType($"Plugin_v{PluginVersion}.{selectedClass}");
+            }
+
             if (type != null)
             {
                 var methods = type.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.FlattenHierarchy)
@@ -110,7 +126,6 @@ namespace Lab1
             
             ElectronicDevice selectedDevice = listBox1.SelectedItem as ElectronicDevice;
             string selectedMethodName = comboBox2.SelectedItem.ToString();
-
             MethodInfo method = selectedDevice.GetType().GetMethod(selectedMethodName);
             if (method == null)
             {
@@ -171,6 +186,11 @@ namespace Lab1
             string selectedClass = comboBox1.SelectedItem.ToString();
             Type type = Type.GetType($"Lab1.{selectedClass}");
 
+            if (type == null)
+            {
+                type = assembly.GetType($"Plugin_v{PluginVersion}.{selectedClass}");
+            }
+
             if (type != null)
             {
                 ElectronicDevice newDevice = null;
@@ -225,7 +245,7 @@ namespace Lab1
                 Output("Выберите объект из списка.");
                 return;
             }
-
+            
             ElectronicDevice selectedDevice = listBox1.SelectedItem as ElectronicDevice;
             container.RemoveElectronicDevice(selectedDevice);
             listBox1.Items.Remove(selectedDevice);
@@ -251,19 +271,137 @@ namespace Lab1
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            FieldsComboBox.Items.Clear();
-            int index = listBox1.Items.IndexOf(listBox1.SelectedItem);
-            Type type = container[index].GetType();
-            var properties = type.GetProperties();
-            var propertiesNames = properties.Select(p => p.Name).ToArray();
-            FieldsComboBox.Items.AddRange(propertiesNames);
-            
+            try
+            {
+                FieldsComboBox.Items.Clear();
+                int index = listBox1.Items.IndexOf(listBox1.SelectedItem);
+                Type type = container[index].GetType();
+                var properties = type.GetProperties();
+                var propertiesNames = properties.Select(p => p.Name).ToArray();
+                FieldsComboBox.Items.AddRange(propertiesNames);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Тут нет объекта!");
+            }
         }
 
         private void FieldsComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             int index = listBox1.Items.IndexOf(listBox1.SelectedItem);
             ErrorFieldLabel.Text = $"{FieldsComboBox.Text}: {container[index].GetType().GetProperty(FieldsComboBox.Text).GetValue(container[index])}";
+        }
+
+        private void SerializeButton_Click(object sender, EventArgs e)
+        {
+            if (TextRadioButton.Checked) {
+                    using (StreamWriter fw = new StreamWriter(FileNameTextBox.Text + ".txt"))
+                    {
+                        foreach (var obj in container)
+                        {
+                            Type type = obj.GetType();
+                            var fields = type.GetProperties();
+                            fw.Write(type.Name + " ");
+                            foreach (var field in fields)
+                            {
+                                fw.Write(field.Name + ":" + field.GetValue(obj) + " ");
+                            }
+                            fw.WriteLine();
+                        }
+                        MessageBox.Show("Список сериализован!");
+                    }
+            }
+            else if(BinaryRadioButton.Checked){
+                IFormatter binaryFormatter = new BinaryFormatter();  
+                using (FileStream fs = new FileStream(FileNameTextBox.Text + ".dat", FileMode.OpenOrCreate))
+                {
+                    binaryFormatter.Serialize(fs, container);
+                    MessageBox.Show("Список сериализован!");
+                }
+            }
+            else {
+                MessageBox.Show("Вы не выбрали тип файла!");
+            }
+        }
+
+        private void DeserializeButton_Click(object sender, EventArgs e)
+        {
+            if (TextRadioButton.Checked)
+            {
+                if (File.Exists(FileNameTextBox.Text + ".txt"))
+                {
+                    try
+                    {
+                        using (StreamReader fr = new StreamReader(FileNameTextBox.Text + ".txt"))
+                        {
+                            try
+                            {
+                                container.ClearDevices();
+                                string line;
+                                while ((line = fr.ReadLine()) != null)
+                                {
+                                    string[] values = line.Split(' ');
+                                    Type? type = Type.GetType("Lab1." + values[0]);
+                                    var fields = type.GetProperties();
+                                    object obj = Activator.CreateInstance(type);
+                                    for (int i = 1; i < fields.Length-1; i++)
+                                    {
+                                        string[] vals= values[i].Split(':');
+                                        fields[i-1].SetValue(obj, Convert.ChangeType(vals[1], fields[i-1].PropertyType));
+                                    }
+                                    container.AddElectronicDevice(Convert.ChangeType(obj, type) as ElectronicDevice);
+                                    listBox1.Items.Clear();
+                                    foreach (var device in container)
+                                    {
+                                        listBox1.Items.Add(device);
+                                    }
+                                }
+                            }
+                            catch
+                            {
+                                MessageBox.Show("Не удалось десериализовать файл");
+                            }
+                        }
+                    }
+                    catch (FileNotFoundException)
+                    {
+                        MessageBox.Show("Файл с таким названием не найден");
+                    }
+                }
+            }
+            else if(BinaryRadioButton.Checked)
+            {
+                IFormatter binaryFormatter = new BinaryFormatter();
+                try
+                {
+                    using (FileStream fs = new FileStream(FileNameTextBox.Text + ".dat", FileMode.Open))
+                    {
+                        try
+                        {
+                            container = (ClassesContainer)binaryFormatter.Deserialize(fs);
+                            listBox1.Items.Clear();
+                            foreach (var obj in container)
+                            {
+                                listBox1.Items.Add(obj);
+                            }
+
+                            MessageBox.Show("Файл десериализован!");
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Не удалось десериализовать файл");
+                        }
+                    }
+                }
+                catch (FileNotFoundException)
+                {
+                    MessageBox.Show("Файл с таким названием не найден");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Вы не выбрали тип файла!");
+            }
         }
     }
 }

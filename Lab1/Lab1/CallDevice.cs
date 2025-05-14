@@ -3,9 +3,11 @@ using System;
 
 namespace Lab1;
 
-public class CallDevice : PortableDevice, IDevice
+[Serializable]
+public class CallDevice : PortableDevice
 {
     private const string _Pattern = @"^\+375(29|33|44|25)\d{7}$";
+    [NonSerialized]
     private readonly Regex _regex = new Regex(_Pattern);
     
     public string Pattern {
@@ -33,6 +35,6 @@ public class CallDevice : PortableDevice, IDevice
     
     public override void Property()
     {
-        MainForm.Instance.Output("Устройство позволяет совершать звонки.");
+        Console.WriteLine("Устройство позволяет совершать звонки.");
     }
 }

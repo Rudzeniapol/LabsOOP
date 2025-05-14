@@ -1,6 +1,6 @@
 ﻿namespace Lab1;
-
-public class LaptopDevice : SmartphoneDevice, IPowerable, IDevice
+[Serializable]
+public class LaptopDevice : SmartphoneDevice, IPowerable
 {
     protected bool _power = false;
 
@@ -100,7 +100,7 @@ public class LaptopDevice : SmartphoneDevice, IPowerable, IDevice
     
     public override void Property()
     {
-        MainForm.Instance.Output("Это ноутбук. Портативная и мощная вычислительная машина.");
+        Console.WriteLine("Это ноутбук. Портативная и мощная вычислительная машина.");
     }
 
     public override void Call(string? phone)

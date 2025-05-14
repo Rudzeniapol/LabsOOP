@@ -1,6 +1,6 @@
 ﻿namespace Lab1;
-
-public class SmartWatchDevice : CallDevice, IDevice
+[Serializable]
+public class SmartWatchDevice : CallDevice
 {
     private bool _isConnectedToPhone;
 
@@ -31,7 +31,7 @@ public class SmartWatchDevice : CallDevice, IDevice
     }
     public override void Property()
     {
-        MainForm.Instance.Output("Портативные часы, способные взаимодействовать со смартфоном.");
+        Console.WriteLine("Портативные часы, способные взаимодействовать со смартфоном.");
     }
 
     public virtual void ConnectToSmartphone()

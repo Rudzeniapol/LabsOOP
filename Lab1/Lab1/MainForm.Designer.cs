@@ -44,6 +44,12 @@ partial class MainForm
         FieldButton = new System.Windows.Forms.Button();
         ErrorFieldLabel = new System.Windows.Forms.Label();
         FieldTextBox = new System.Windows.Forms.TextBox();
+        BinaryRadioButton = new System.Windows.Forms.RadioButton();
+        TextRadioButton = new System.Windows.Forms.RadioButton();
+        FileNameTextBox = new System.Windows.Forms.TextBox();
+        SerializeButton = new System.Windows.Forms.Button();
+        DeserializeButton = new System.Windows.Forms.Button();
+        label3 = new System.Windows.Forms.Label();
         ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
         SuspendLayout();
         // 
@@ -178,12 +184,73 @@ partial class MainForm
         FieldTextBox.Size = new System.Drawing.Size(227, 27);
         FieldTextBox.TabIndex = 13;
         // 
+        // BinaryRadioButton
+        // 
+        BinaryRadioButton.Location = new System.Drawing.Point(10, 536);
+        BinaryRadioButton.Name = "BinaryRadioButton";
+        BinaryRadioButton.Size = new System.Drawing.Size(147, 24);
+        BinaryRadioButton.TabIndex = 15;
+        BinaryRadioButton.TabStop = true;
+        BinaryRadioButton.Text = "Бинарный файл";
+        BinaryRadioButton.UseVisualStyleBackColor = true;
+        // 
+        // TextRadioButton
+        // 
+        TextRadioButton.Location = new System.Drawing.Point(163, 536);
+        TextRadioButton.Name = "TextRadioButton";
+        TextRadioButton.Size = new System.Drawing.Size(146, 24);
+        TextRadioButton.TabIndex = 15;
+        TextRadioButton.TabStop = true;
+        TextRadioButton.Text = "Текстовый файл";
+        TextRadioButton.UseVisualStyleBackColor = true;
+        // 
+        // FileNameTextBox
+        // 
+        FileNameTextBox.Location = new System.Drawing.Point(590, 536);
+        FileNameTextBox.Name = "FileNameTextBox";
+        FileNameTextBox.Size = new System.Drawing.Size(198, 27);
+        FileNameTextBox.TabIndex = 16;
+        // 
+        // SerializeButton
+        // 
+        SerializeButton.Location = new System.Drawing.Point(305, 524);
+        SerializeButton.Name = "SerializeButton";
+        SerializeButton.Size = new System.Drawing.Size(126, 42);
+        SerializeButton.TabIndex = 17;
+        SerializeButton.Text = "Сериализовать";
+        SerializeButton.UseVisualStyleBackColor = true;
+        SerializeButton.Click += SerializeButton_Click;
+        // 
+        // DeserializeButton
+        // 
+        DeserializeButton.Location = new System.Drawing.Point(437, 524);
+        DeserializeButton.Name = "DeserializeButton";
+        DeserializeButton.Size = new System.Drawing.Size(147, 42);
+        DeserializeButton.TabIndex = 18;
+        DeserializeButton.Text = "Десериализовать";
+        DeserializeButton.UseVisualStyleBackColor = true;
+        DeserializeButton.Click += DeserializeButton_Click;
+        // 
+        // label3
+        // 
+        label3.Location = new System.Drawing.Point(590, 518);
+        label3.Name = "label3";
+        label3.Size = new System.Drawing.Size(197, 25);
+        label3.TabIndex = 19;
+        label3.Text = "Имя файла:";
+        // 
         // MainForm
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.SystemColors.Control;
-        ClientSize = new System.Drawing.Size(800, 530);
+        ClientSize = new System.Drawing.Size(800, 575);
+        Controls.Add(label3);
+        Controls.Add(DeserializeButton);
+        Controls.Add(SerializeButton);
+        Controls.Add(FileNameTextBox);
+        Controls.Add(TextRadioButton);
+        Controls.Add(BinaryRadioButton);
         Controls.Add(FieldTextBox);
         Controls.Add(ErrorFieldLabel);
         Controls.Add(FieldButton);
@@ -205,6 +272,15 @@ partial class MainForm
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.Label label3;
+
+    public System.Windows.Forms.TextBox FileNameTextBox;
+    private System.Windows.Forms.Button SerializeButton;
+    private System.Windows.Forms.Button DeserializeButton;
+
+    public System.Windows.Forms.RadioButton BinaryRadioButton;
+    public System.Windows.Forms.RadioButton TextRadioButton;
 
     private System.Windows.Forms.TextBox FieldTextBox;
 

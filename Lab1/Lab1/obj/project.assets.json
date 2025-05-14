@@ -551,6 +551,16 @@
         "runtime": {
           "lib/ZedGraph.dll": {}
         }
+      },
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
       }
     }
   },
@@ -2026,12 +2036,18 @@
         "zedgraph.5.1.5.nupkg.sha512",
         "zedgraph.nuspec"
       ]
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "AForge.Video >= 2.2.5",
       "AForge.Video.DirectShow >= 2.2.5",
+      "Common >= 1.0.0",
       "Emgu.CV >= 4.10.0.5680",
       "Emgu.CV.Bitmap >= 4.10.0.5680",
       "Emgu.CV.Models >= 4.10.0.5680",
@@ -2071,7 +2087,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ffgg9\\OneDrive\\Desktop\\Infinite Learning\\Students package\\OOP\\Labs\\Lab1\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\ffgg9\\OneDrive\\Desktop\\Infinite Learning\\Students package\\OOP\\Labs\\Lab1\\Common\\Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2142,7 +2162,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

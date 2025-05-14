@@ -1,6 +1,6 @@
 ﻿namespace Lab1;
-
-public class SmartDevice : CallDevice, IConnectable, IDevice
+[Serializable]
+public class SmartDevice : CallDevice, IConnectable
 {
     protected bool IsConnected { get; set; }
 
@@ -68,6 +68,6 @@ public class SmartDevice : CallDevice, IConnectable, IDevice
     
     public override void Property()
     {
-        MainForm.Instance.Output("Умное устройство (имеет возможность взаимодействовать с Интернетом).");
+        Console.WriteLine("Умное устройство (имеет возможность взаимодействовать с Интернетом).");
     }
 }
